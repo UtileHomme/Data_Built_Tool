@@ -70,3 +70,17 @@
 
 ![1709886431950](image/Snowflake_concepts/1709886431950.png)
 
+![1709886478584](image/Snowflake_concepts/1709886478584.png)
+
+![1709886491867](image/Snowflake_concepts/1709886491867.png)
+
+![1709886504171](image/Snowflake_concepts/1709886504171.png)
+
+## Snowflake Table/Schema/Database and Container Hierarchy
+
+[https://www.youtube.com/watch?v=Pi3z1NyBd-Y&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=7]
+
+![1709886642208](image/Snowflake_concepts/1709886642208.png)
+
+
+
