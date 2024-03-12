@@ -106,6 +106,18 @@
 
 ![1710212055529](image/Snowflake_concepts/1710212055529.png)
 
+## Snowflake Stages
+
+[https://www.youtube.com/watch?v=lI5OQPjuj-8&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=9]
+
+![1710233669670](image/Snowflake_concepts/1710233669670.png)
+
+![1710233709659](image/Snowflake_concepts/1710233709659.png)
+
+![1710233777684](image/Snowflake_concepts/1710233777684.png)
+
+![1710233794918](image/Snowflake_concepts/1710233794918.png)
+
 
 
 
