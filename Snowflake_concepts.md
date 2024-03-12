@@ -82,5 +82,32 @@
 
 ![1709886642208](image/Snowflake_concepts/1709886642208.png)
 
+## Snowflake Sequence Objects
+
+[https://www.youtube.com/watch?v=S5NwU2o2Exg&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=8&ab_channel=DataEngineeringSimplified]
+
+![1710211561774](image/Snowflake_concepts/1710211561774.png)
+
+## Snowflake File formats
+
+[https://www.youtube.com/watch?v=S5NwU2o2Exg&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=8&ab_channel=DataEngineeringSimplified]
+
+![1710211586682](image/Snowflake_concepts/1710211586682.png)
+
+## Snowflake Stage objects
+
+[https://www.youtube.com/watch?v=S5NwU2o2Exg&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=8&ab_channel=DataEngineeringSimplified]
+
+![1710211763413](image/Snowflake_concepts/1710211763413.png)
+
+## Integration Objects
+
+[https://www.youtube.com/watch?v=S5NwU2o2Exg&list=PLba2xJ7yxHB73xHFsyu0YViu3Hi6Ckxzj&index=8&ab_channel=DataEngineeringSimplified]
+
+![1710212055529](image/Snowflake_concepts/1710212055529.png)
+
+
+
+
 
 

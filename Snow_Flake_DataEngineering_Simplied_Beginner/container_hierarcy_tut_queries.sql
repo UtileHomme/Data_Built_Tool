@@ -123,7 +123,7 @@ use warehouse dbt_sleek;
       
 // ====================================================================
 -- Upper, Lower & Mixed case table
-    drop table my_case_table;
+    drop table if exists my_case_table;
     create table my_case_table (my_field string);
     desc table my_case_table;
     show tables like 'MY_C%';
@@ -202,7 +202,7 @@ use warehouse dbt_sleek;
     -- list the stage
     list @ch7_stg;
     
-    -- lets view the data first
+    -- lets view the data irst
     create or replace file format my_format type = 'csv' field_delimiter = ',';
     select t.$1, t.$2, t.$3,t.$4, t.$5, t.$6 from @my_stg (file_format => 'my_format') t; 
     
@@ -214,8 +214,7 @@ use warehouse dbt_sleek;
       num10_1 number(10,1),
       decimal_20_2 decimal(20,2),
       numeric numeric(30,3),
-      int int,
-      integer integer
+      int int
     );
     
     -- lets check data
