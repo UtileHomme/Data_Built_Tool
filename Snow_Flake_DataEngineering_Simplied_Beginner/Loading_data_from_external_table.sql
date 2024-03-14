@@ -108,3 +108,5 @@ desc external table customer_csv_et type = 'stage';
 
 
 
+
+
