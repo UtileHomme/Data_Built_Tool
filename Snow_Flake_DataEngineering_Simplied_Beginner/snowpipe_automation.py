@@ -2,6 +2,8 @@
 
 # https://data-engineering-simplified.medium.com/continuous-data-loading-in-snowflake-bec729ec0e53
 
+# https://github.com/snowflakedb/snowflake-ingest-python/blob/master/README.rst
+
 from logging import getLogger
 from snowflake.ingest import SimpleIngestManager
 from snowflake.ingest import StagedFile
@@ -19,26 +21,34 @@ import datetime
 import os
 import logging
 
+paraphrase = "Votreami@123"
 
-logging.basicConfig(
-        filename=r"C:\Users\jsharma029\OneDrive - pwc\Data_Built_Tool\Snow_Flake_DataEngineering_Simplied_Beginner\ingest.log",
+
+# logging.basicConfig(
+        # filename=r"C:\Users\jsharma029\OneDrive - pwc\Data_Built_Tool\Snow_Flake_DataEngineering_Simplied_Beginner\ingest.log",
+        # level=logging.DEBUG)
+    
+logging.basicConfig(    
+filename=r"C:\Users\pksk6\OneDrive_Latest\OneDrive\Study_Related\Data_Build_Tool(DBT)_and_Snowflake\Snow_Flake_DataEngineering_Simplied_Beginner\ingest.log",
         level=logging.DEBUG)
 logger = getLogger(__name__)
 
-with open("/tmp/snowflake-key/rsa_key.p8", 'rb') as pem_in:
+# https://streamsets.com/blog/snowflake-key-pair-authentication/
+with open(r"C:\Users\pksk6\OneDrive_Latest\OneDrive\Study_Related\Data_Build_Tool(DBT)_and_Snowflake\rsa_key.p8", 'rb') as pem_in:
   pemlines = pem_in.read()
   private_key_obj = load_pem_private_key(pemlines,
-  os.environ['PRIVATE_KEY_PASSPHRASE'].encode(),
+  paraphrase.encode(),
   default_backend())
+
 
 private_key_text = private_key_obj.private_bytes(
   Encoding.PEM, PrivateFormat.PKCS8, NoEncryption()).decode('utf-8')
 
-file_list=['/my_customer_data.csv']
-ingest_manager = SimpleIngestManager(account='DVB99010',
-                                     host='DVB99010.us-east-1.aws.snowflakecomputing.com',
+file_list=[r"my_customer_data.csv",r"my_customer_data_2.csv"]
+ingest_manager = SimpleIngestManager(account='QFOMQCZ-DVB99010',
+                                     host='QFOMQCZ-DVB99010.snowflakecomputing.com',
                                      user='UTILEHOMME123',
-                                     pipe='my_pipe_10',
+                                     pipe='MY_DB.CH10.my_pipe_10',
                                      private_key=private_key_text)
 staged_file_list = []
 for file_name in file_list:
